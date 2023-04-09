@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>DAPP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+ <link rel="stylesheet" href="/index.c36f3da9.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="/index.491f42e7.js"></script>
+  <script src="/index.d0b8a302.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<body>
+  
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Decentralized Banking App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accounts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="link" href="/deposit.html">Deposit</a>
+        </li>
+        <script>document.getElementById("link").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    window.location.href = this.getAttribute("href");
+    connectMetamask();
+//connectToContract(); // Navigate to the href attribute of the link
+});
+
+</script>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Payments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+            <p href="£" class="h5 navbar-textfont-weight-bold" style="color: #fff; margin-top: 17px; margin-left: 20px" id="accountArea"></p>
+        
+        <li>
+          <div>
+            <button type="button" style="margin-left: 200px" id="metbtn" class="btn btn-danger" onclick="connectMetamask()">Login with Metamask</button>
+            
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-1">
+          <h3>Transparent</h3>
+          <p>All transactions are publicly visible and auditable, making it easier to track and verify the movement of funds. This can help to reduce fraud and increase trust between parties.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-2">
+          <h3>Decentralized</h3>
+          <p>Built on decentralized blockchain networks,not controlled by any single entity or organization.More resistant to censorship, hacking, and other forms of interference..</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-3">
+          <h3>Lower costs</h3>
+          <p>don't rely on intermediaries like banks or other financial institutions,Hence low Transaction charges.Now worry less about money transfer,more about your health</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <!-- <button onclick="getContractAccount()"> GET CONTRACT ACCOUNT </button>
+  <p id="contractAccount"></p> -->
+  </div>
+  <div>
+    <p class="h4 navbar-text font-weight-bold" id="contractArea"></p>
+   
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card border border-3 rounded-3">
+          <div class="card-header bold">Account Summary</div>
+          <div class="card-body">
+            
+            <h5 class="card-text" id="balanceArea">Current Balance: </h5>
+            <p onclick="generateLink()" id="myLink" class="btn btn-primary">View Transactions</p>
+          </div>
+        </div>
+      </div>
+
+    
+  </div>
+  
+  
+            
+          </div>
+
+        </div>
+        
+            
+        
+      
+     
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h5 class="card-title">Transfer Ethereum to other Accounts</h5>
+              <div class="mb-3">
+                <label for="input1" class="form-label">Enter the address</label>
+                <input type="text" class="form-control form-control-sm" id="address" placeholder="Enter the address of receipent">
+              </div>
+              <div class="mb-3">
+                <label for="input1" class="form-label">Enter the Amount</label>
+                <input type="text" class="form-control form-control-sm" id="amount" placeholder="Enter the amount">
+              </div>
+              <button type="submit" onclick="transferAmount()" class="btn btn-primary btn-sm btn-block">Submit</button>
+              
+            </div>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      
+    
+    
+   
+<script src="/public.0ba7c674.js"></script></body>
+
+</html>
